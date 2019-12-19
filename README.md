@@ -38,8 +38,8 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 8. ulala projek meniko has started sucessfully. XD tq for your attention all.
 
 ## If you are pooseng or need consult for final project
-contact us at ngulicode.com for zauvik contact
-if you wanna ajik contact, you can found here +6282138308595
+1. if you want zauvik contact, you will found at ngulicode.com
+2. if you wanna ajik contact, you can found here +6282138308595
 
 
 
