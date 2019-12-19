@@ -41,6 +41,9 @@ If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Lar
 1. if you wanna zauvik contact, you will found at ngulicode.com
 2. if you wanna ajik contact, you can found here +6282138308595
 
+## Extra
+This repo is accomplish from https://github.com/ajisyahroni/laravel-starter.git
+
 
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
