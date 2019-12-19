@@ -9,18 +9,18 @@
 </head>
 
 <body>
-    @extends('master')
+    @extends('header')
     @section('main_content')
-    <form action="" method="post">
-        <label for="name">Nama Buku</label>
-        <input type="text" name="name" class="form-control">
+    <form action="/action/add" method="post">
+    @csrf
+        <label for="name">Judul Buku</label>
+        <input type="text" name="title" class="form-control">
         <label for="pengarang">Pengarang</label>
         <input type="text" name="pengarang" class="form-control">
         <label for="penerbit">Penerbit</label>
         <input type="text" name="penerbit" class="form-control">
         <label for="tahun">Tahun terbit</label>
         <input type="text" name="tahun" class="form-control">
-
         <button type="submit" class="btn btn-block btn-primary mt-5">Submit</button>
     </form>
     @stop

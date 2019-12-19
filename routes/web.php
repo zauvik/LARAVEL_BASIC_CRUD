@@ -11,13 +11,19 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
+//-----------read----------//
+Route::get('/','BookController@show');
+
+//-----------create----------//
 Route::get('/add', function () {
     return view('add');
 });
+Route::post('/action/add','BookController@add');
 
-Route::get('/update', function () {
-    return view('update');
-});
+//-----------update----------//
+Route::get('/update/bookid={bookid}', 'BookController@form_update');
+Route::post('/action/update/bookid={bookid}','BookController@update');
+
+//-----------delete----------//
+Route::get('/action/delete/bookid={bookid}','BookController@delete');

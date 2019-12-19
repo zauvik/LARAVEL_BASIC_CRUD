@@ -15,7 +15,6 @@
 <body class="container">
     <div>
         <h1 class="display-4">Data buku</h1>
-        <a href="add">+ add buku</a>
         <div class="my-5"></div>
     </div>
 

@@ -13,8 +13,10 @@
 
 <body class="container">
 
-    @extends('master')
+    @extends('header')
     @section('main_content')
+    <a href="add">+ add buku</a>
+    <hr>
     <table class="table">
         <thead>
             <tr>
@@ -27,17 +29,16 @@
             </tr>
         </thead>
         <tbody>
+        @foreach($data as $key=>$show)
             <tr>
-                <td>1</td>
-                <td>Algoritma</td>
-                <td>Ajik</td>
-                <td>Jogja penerbit</td>
-                <td>2019</td>
-                <td>
-                    <a href="update" class="btn btn-sm btn-success">update</a>
-                    <a href="#" class="btn btn-sm btn-danger">delete</a>
-                </td>
+            <td>{{$key+1}}</td>
+                <td>{{$show->title}}</td>
+                <td>{{$show->pengarang}}</td>
+                <td>{{$show->penerbit}}</td>
+                <td>{{$show->tahun}}</td>
+                <td><a href="/update/bookid={{$show->id}}" class="btn btn-warning">update</a> <a href="/action/delete/bookid={{$show->id}}" class="btn btn-danger">delete</a></td>
             </tr>
+        @endforeach
         </tbody>
     </table>
     @stop
